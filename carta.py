@@ -9,3 +9,8 @@ class Carta:
         if self.valor == 'A':
             return 1
         return int(self.valor)
+
+    def son_iguales(self, carta):
+        if self.valor == carta.valor and self.pinta == carta.pinta:
+            return True
+        return False
